@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness club</title>
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        /* height: 4545px; */
+
+        background-size:100% 100% ;
+    }
+
+    /* .body img { */
+        /* position: center; */
+    /* } */
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+
+    /* .left img{} */
+    .mid {
+        /* border: 2px solid blue; */
+        display: block;
+        width: 32%;
+        margin: 20px auto;
+
+    }
+
+    .right {
+        /* border: 2px solid green; */
+        display: inline-block;
+        position: absolute;
+        top: 23px;
+        right: 34px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover,.navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        font-family: 'Ubuntu', sans-serif;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 6px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn :hover {
+        background-color: pink;
+    }
+
+    .container {
+        background-color: 2px solid green;
+        margin: 128px 153px;
+        padding: 75px 2px;
+        width: 33%;
+        border-radius: 20px;
+        border-radius: 2%;
+
+}
+.form-group input{
+    text-align: center;
+    display: block;
+    width: 370px;
+    padding: 6px;
+    border: 2px solid black;
+    margin: 15px auto;
+    border-radius: 0%;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.container h1{
+    text-align: center;
+
+}
+.container button{
+    display:block ;
+    width: 90px;
+    margin: auto;
+
+}
+</style>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <!-- <img src="img/gym.jpg" alt=""> -->
+            <div>Kalash fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Enquiry</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+
+    </header>
+    <div class="container">
+       <h1>Join the best gym of Agra</h1>
+       <form action="noaction.php">
+           <div class="form-group">
+               <div>
+                    <input type="text" name="" placeholder="Enter your name" >
+               </div>
+               <div>
+                    <input type="text" name="" placeholder="Enter your Age" >
+               </div>
+               <div>
+                    <input type="text" name="" placeholder="Enter your Gender" >
+               </div>
+               <div>
+                    <input type="text" name="" placeholder="Enter your locality" >
+               </div>
+           </div>
+           <button class="btn">Submit</button>
+
+       </form>
+    </div>
+</body>
+</html>
